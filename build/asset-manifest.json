@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0dbec887.css",
+    "main.js": "/static/js/main.26985f6c.js",
+    "static/js/787.c1112931.chunk.js": "/static/js/787.c1112931.chunk.js",
+    "static/media/user-section.png": "/static/media/user-section.e170bf7687a6e6a3d91d.png",
+    "static/media/user-section-media.png": "/static/media/user-section-media.a81c8cf91e36028dc040.png",
+    "static/media/marketing.png": "/static/media/marketing.0f7356fa6c924d15729d.png",
+    "static/media/feedback1.jpg": "/static/media/feedback1.d743ff905f3bcfcc2986.jpg",
+    "static/media/toothbrush.png": "/static/media/toothbrush.d3ed78a379638a22a85e.png",
+    "static/media/header-photo.png": "/static/media/header-photo.e37147e2a511431d11af.png",
+    "static/media/feedback3.jpg": "/static/media/feedback3.6cc0238a9d3437da7804.jpg",
+    "static/media/tutorials-pills.png": "/static/media/tutorials-pills.9a8a7da2dcc36d19a539.png",
+    "static/media/tutorials-dnk.png": "/static/media/tutorials-dnk.1e79f4079883f72f5f56.png",
+    "static/media/tutorials-person.jpg": "/static/media/tutorials-person.724cf80ecc4047a9c3e3.jpg",
+    "index.html": "/index.html",
+    "main.0dbec887.css.map": "/static/css/main.0dbec887.css.map",
+    "main.26985f6c.js.map": "/static/js/main.26985f6c.js.map",
+    "787.c1112931.chunk.js.map": "/static/js/787.c1112931.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0dbec887.css",
+    "static/js/main.26985f6c.js"
+  ]
+}
