@@ -1,0 +1,176 @@
+.tutorial {
+  padding: 4rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.tutorial-circles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+/*  /////////////////  Tutorial Left \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+.tutorial-left {
+  width: 540px;
+  height: 540px;
+  flex-shrink: 0;
+  border-radius: 540px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tutorial-left-header {
+  padding-top: 5rem;
+  width: 400px;
+  color: #3dba11;
+  text-align: center;
+  font-family: SF Pro Display;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 70px; /* 116.667% */
+  letter-spacing: -1.8px;
+}
+
+.tutorial-left-text {
+  width: 230px;
+  color: #000;
+  text-align: center;
+  font-family: SF Pro Display;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 145.455% */
+  letter-spacing: -0.44px;
+}
+
+.tutorial-left-circle {
+  width: 157px;
+  height: 157px;
+  flex-shrink: 0;
+  border-radius: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.tutorial-left-circle svg {
+  width: 100px;
+}
+
+/* //////////////////////////////////   Tutorial Circle \\\\\\\\\\\\\\\\\\\\\\\\\\\\  */
+.tutorial-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  position: relative;
+}
+
+.tutorial-sm-circle {
+  width: 240px;
+  height: 240px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tutorial-sm-circle div {
+  text-align: center;
+}
+
+.tutorial-circle img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+/* ////////////////////////////////////////////// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+@media screen and (max-width: 768px) {
+  .tutorial {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .tutorial-left {
+    width: 345px;
+    height: 345px;
+    flex-shrink: 0;
+    justify-self: center;
+  }
+
+  .tutorial-left-header {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 42px; /* 131.25% */
+    letter-spacing: -0.96px;
+  }
+
+  .tutorial-left-text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.32px;
+  }
+
+  .tutorial-left-circle {
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+  }
+
+  .tutorial-left-circle svg {
+    width: 30px;
+  }
+
+  .tutorial-circles {
+    justify-self: center;
+  }
+
+  .tutorial-circle {
+    width: 200px;
+    height: 200px;
+  }
+
+  .tutorial-sm-circle {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .tutorial {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .tutorial-left {
+    justify-self: center;
+  }
+  .tutorial-circles {
+    justify-self: center;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .tutorial {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .tutorial-left {
+    justify-self: center;
+  }
+  .tutorial-circles {
+    justify-self: center;
+  }
+}

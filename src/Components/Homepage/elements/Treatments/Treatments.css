@@ -1,0 +1,104 @@
+.treatments {
+  margin-top: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f3f7f2;
+}
+
+.treatments-header {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 40px */
+  letter-spacing: -1.2px;
+  padding-bottom: 70px;
+}
+
+.all-methods {
+  /* max-width: 400px;
+   display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 10px; */
+}
+
+.treatments-btn {
+  display: inline-flex;
+  height: 50px;
+  padding: 16px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  margin-top: 30px;
+}
+
+.treatment-left-btn {
+  width: max-content;
+  padding: 16px 30px;
+  border-radius: 99px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.treatment-left-btn:hover {
+  background-color: #3dba11;
+}
+
+.treatment-left-btn:hover a {
+  color: #fff !important;
+}
+
+.treatment-left-btn a {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 16px */
+}
+
+.treatments-right {
+  position: relative;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.treatments-right img {
+  height: 500px;
+  z-index: 2;
+}
+
+.treatments-right div {
+  width: 300px;
+  height: 300px;
+  border-radius: 288px;
+  background: #3dba11;
+  position: absolute;
+  left: 15%;
+  top: 35%;
+}
+
+/* //////////////////// Treatment Method \\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.treatment-method {
+  display: inline-flex;
+  padding: 20px 36px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 63px;
+  border: 1px solid #0d3300;
+  width: max-content;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.treatment-method div {
+  color: #0d3300;
+  font-family: SF Pro Display;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 22px */
+  letter-spacing: -0.44px;
+}

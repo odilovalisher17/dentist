@@ -1,0 +1,289 @@
+.header-image {
+  text-align: center;
+}
+
+.header-photo {
+  position: relative;
+}
+
+.header-photo-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-photo-img img {
+  position: relative;
+  z-index: 10 !important;
+}
+
+.header-photo-animate-div-1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-photo-animate-div-1 div {
+  width: 280px;
+  height: 280px;
+  border-radius: 100%;
+  background-color: rgba(150, 240, 254, 0.7);
+  z-index: 4;
+  animation: header-photo 2s infinite ease-in-out;
+}
+
+.header-photo-animate-div-1 div div {
+  width: 260px;
+  height: 260px;
+  border-radius: 100%;
+  background-color: #fff;
+  z-index: 4;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+.header-photo-animate-div-2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-photo-animate-div-2 div {
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+  background-color: rgba(150, 240, 254, 0.5);
+  z-index: 3;
+  animation: header-photo 2s infinite ease-in-out;
+  animation-delay: 0.5s;
+}
+
+.header-photo-animate-div-2 div div {
+  width: 330px;
+  height: 330px;
+  border-radius: 100%;
+  background-color: #fff;
+  z-index: 3;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+.header-photo-animate-div-3 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-photo-animate-div-3 div {
+  width: 440px;
+  height: 440px;
+  border-radius: 100%;
+  background-color: rgba(150, 240, 254, 0.3);
+  z-index: 2;
+  animation: header-photo 2s infinite ease-in-out;
+  animation-delay: 1s;
+}
+
+.header-photo-animate-div-3 div div {
+  width: 420px;
+  height: 420px;
+  border-radius: 100%;
+  background-color: #fff;
+  z-index: 2;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+.header-photo-animate-div-4 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-photo-animate-div-4 div {
+  width: 520px;
+  height: 520px;
+  border-radius: 100%;
+  background-color: rgba(150, 240, 254, 0.1);
+  z-index: 1;
+  animation: header-photo 2s infinite ease-in-out;
+  animation-delay: 1.5s;
+}
+
+.header-photo-animate-div-4 div div {
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+  background-color: #fff;
+  z-index: 1;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+/* //////////////////////////////  Header Image Comments  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+.header-photo-comments {
+  z-index: 11;
+  position: absolute;
+  width: max-content;
+}
+
+.header-photo-comments-main {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px 5px;
+  border-radius: 20px;
+  opacity: 0;
+  animation: comments-animate 1s 1 linear;
+  animation-delay: 1s;
+}
+
+.header-photo-comments-main-img {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.header-photo-comments-main-img svg {
+  fill: #3dba11;
+  font-size: 20px;
+}
+
+.header-photo-comment-circle {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  filter: drop-shadow(0px 4px 11px rgba(22, 78, 2, 0.27));
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: comments-animate-circle 1s 1 linear;
+  position: absolute;
+}
+
+.header-photo-comment-circle div {
+  width: 15px;
+  height: 15px;
+  background-color: #3dba11;
+  border-radius: 100%;
+}
+
+.comments-pointer {
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.15);
+  z-index: -1;
+  border-radius: 5px;
+  transform: rotate(45deg);
+  opacity: 0;
+  animation: comments-animate-circle 1s 1 linear;
+  animation-delay: 2s;
+  position: absolute;
+}
+
+@keyframes header-photo {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes comments-animate {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes comments-animate-circle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ////////////// Small \\\\\\\\\\\\\\\\\\\\ */
+@media screen and (max-width: 768px) {
+  .header-photo-img img {
+    width: 200px;
+  }
+  .header-image {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .header-photo-comment-circle {
+    width: 25px;
+    height: 25px;
+  }
+
+  .header-photo-comment-circle div {
+    width: 10px;
+    height: 10px;
+  }
+
+  .header-photo-comments-main {
+    padding: 10px 5px;
+  }
+}
+
+/* //////////// Medium \\\\\\\\\\\\\\\\ */
+@media (min-width: 769px) and (max-width: 992px) {
+  .header-photo-img img {
+    width: 250px;
+  }
+
+  .header-photo-comment-circle {
+    width: 25px;
+    height: 25px;
+  }
+
+  .header-photo-comment-circle div {
+    width: 10px;
+    height: 10px;
+  }
+
+  .header-photo-comments-main {
+    padding: 10px 5px;
+  }
+}
+
+/* /////////////// Large \\\\\\\\\\\\\\\\\\\ */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .header-photo-img img {
+    width: 300px;
+  }
+}

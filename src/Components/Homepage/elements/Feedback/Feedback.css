@@ -1,0 +1,146 @@
+.feedback {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.feedback-img {
+  height: 470px;
+}
+
+.feedback-img img {
+  height: 100%;
+  width: 100%;
+}
+
+.feedback-img-2 {
+  height: 300px !important;
+}
+
+/* /////////////////////////////// Carousel \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+.feedback-carousel-item {
+  height: 470px;
+  border-radius: 20px;
+  background: #f3f7f2;
+}
+
+.feedback-carousel-item svg {
+  width: 229.134px;
+  height: 205.015px;
+  flex-shrink: 0;
+  position: relative;
+  left: 15%;
+  top: -5%;
+}
+
+.carousel-caption-text {
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  letter-spacing: -0.32px;
+}
+
+.carousel-caption {
+  color: #000 !important;
+  text-align: start;
+  top: 25% !important;
+}
+
+.carousel-indicators {
+  justify-content: end;
+  z-index: 5;
+}
+
+.carousel-indicators button {
+  width: 25px !important;
+  height: 8px !important;
+  flex-shrink: 0 !important;
+  border-radius: 5px !important;
+  background: #d4dcd2 !important;
+  border: none !important;
+}
+
+.carousel-indicators .active {
+  background-color: #3dba11 !important;
+}
+
+.feedback-carousel-label {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+}
+
+.feedback-carousel-label-name {
+  color: #000;
+  font-family: SF Pro Display;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px; /* 156.25% */
+  letter-spacing: -0.96px;
+}
+
+.feedback-carousel-label-position {
+  color: #3dba11;
+  font-family: SF Pro Display;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.44px;
+}
+
+/* ///////////////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+@media screen and (max-width: 768px) {
+  .feedback-carousel-item {
+    height: 370px;
+  }
+
+  .feedback-img {
+    height: auto !important;
+  }
+
+  .feedback-carousel-item svg {
+    height: 79.847px;
+    flex-shrink: 0;
+    left: 0;
+  }
+
+  .carousel-caption {
+    top: 10% !important;
+  }
+
+  .carousel-caption-text {
+    color: #000;
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    letter-spacing: -0.32px;
+  }
+
+  .feedback-carousel-label-name {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 150% */
+    letter-spacing: -0.6px;
+  }
+
+  .feedback-carousel-label-position {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.32px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .feedback-img {
+    height: auto !important;
+  }
+}
